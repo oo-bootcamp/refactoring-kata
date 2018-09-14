@@ -1,16 +1,25 @@
-rootProject.name = 'refactoring-katas'
+rootProject.name = "refactoring-katas"
 
-include 'refactoring-techniques:composing-methods',
-        'refactoring-techniques:moving-features-between-objects',
-        'refactoring-techniques:organizing-data',
-        'refactoring-techniques:simplifying-conditional-expressions',
-        'refactoring-techniques:longer',
-        'refactoring-techniques:dealing-with-generalization',
-        'refactoring-techniques:simplifying-method-calls'
+ext {
+    techniquesModule = "refactor-techniques"
+    refactorToPatternsModule = "refactor-to-patterns"
+    samplesModule = "refactor-samples"
+}
 
-include 'refactoring-to-patterns:command-pattern',
-        'refactoring-to-patterns:observer-pattern',
-        'refactoring-to-patterns:visitor-pattern',
-        'refactoring-to-patterns:decorator-pattern',
-        'refactoring-to-patterns:state-pattern'
+
+include "${techniquesModule}:composing-methods",
+        "${techniquesModule}:moving-features-between-objects",
+        "${techniquesModule}:organizing-data",
+        "${techniquesModule}:simplifying-conditional-expressions",
+        "${techniquesModule}:longer",
+        "${techniquesModule}:dealing-with-generalization",
+        "${techniquesModule}:simplifying-method-calls"
+
+include "${refactorToPatternsModule}:command",
+        "${refactorToPatternsModule}:observer",
+        "${refactorToPatternsModule}:visitor",
+        "${refactorToPatternsModule}:decorator",
+        "${refactorToPatternsModule}:state"
+
+include "${samplesModule}:order-receipt"
 
