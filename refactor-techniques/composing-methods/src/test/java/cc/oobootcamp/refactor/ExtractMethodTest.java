@@ -1,6 +1,6 @@
 package cc.oobootcamp.refactor;
 
-import me.aikin.refactoring.composing.methods.model.Order;
+import cc.oobootcamp.refactor.model.Order;
 import org.junit.Test;
 
 import java.util.Arrays;

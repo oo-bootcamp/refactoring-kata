@@ -1,6 +1,6 @@
 package cc.oobootcamp.refactor.encapsulate.collection;
 
-import me.aikin.refactoring.organizing.data.encapsulate.collection.arrays.SkillManager;
+import cc.oobootcamp.refactor.encapsulate.collection.arrays.SkillManager;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public class EncapsulateCollectionTest {
     @Test
     public void should_init_skills() {
         SkillManager skillManager = new SkillManager();
-        skillManager.skills = new String[2]; 
+        skillManager.skills = new String[2];
         skillManager.skills[0] = "Refactoring";
         skillManager.skills[1] = "TDD";
 
