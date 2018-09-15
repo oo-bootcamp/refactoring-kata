@@ -1,4 +1,4 @@
-rootProject.name = "refactoring-katas"
+rootProject.name = "refactor-kata"
 
 ext {
     techniquesModule = "refactor-techniques"
